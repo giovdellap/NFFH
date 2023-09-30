@@ -68,3 +68,13 @@ GET /availability?productid='+product.id+'&seller='+product.seller
 		},
     	available: boolean
 	}
+
+
+# Add an area to the Table "area"
+POST /area		
+Body: 
+	{
+		"areaName" : "[NomeArea]"
+	}
+
+
