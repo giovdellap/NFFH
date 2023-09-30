@@ -1,0 +1,70 @@
+Farmer-BE:
+
+GET /areas
+	Req:
+	Res:
+		{
+			areas: string[]
+		}
+
+GET /stores?zone=area&page=page
+	Req:
+	Res:
+		{
+			zone: string,
+    		page: number,
+    		total: number, //number of pages
+    		stores: 
+    		{
+    			id: string,
+    			name: string,
+    			image: string,
+    			location: string
+    		}[]
+		}
+
+GET /stores/id
+	Req:
+	Res:
+	{
+		id: string,
+    	name: string,
+    	image: string,
+    	location: string
+	}
+
+GET /products?id=id+&page=page
+	Req:
+	Res:
+	{
+		page: number,
+    	total: number,
+    	products: 
+    	{
+    		id: string, 
+    		title: string,
+    		seller: string,
+    		image: string,
+    		description: string,
+    		price: number,
+    		weight: boolean,
+    		availability: boolean
+    	} []
+	}
+
+GET /availability?productid='+product.id+'&seller='+product.seller
+	Req:
+	Res:
+	{
+		product:
+		{
+			id: string, 
+    		title: string,
+    		seller: string,
+    		image: string,
+    		description: string,
+    		price: number,
+    		weight: boolean
+		},
+    	available: boolean
+	}
