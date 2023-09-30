@@ -77,4 +77,15 @@ Body:
 		"areaName" : "[NomeArea]"
 	}
 
+POST /farmer
+body example:
+	{
+	"username" : "Luciano_Moggi",
+        "email" : "arbitroChiuso@nelloSpogliatoio.com",
+        "password" : "Juventus <3",
+        "image" : "cazzo",
+        "area" : "torino",
+        "address" : "via ladri dio cane"
+	}
+
 
