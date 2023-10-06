@@ -1,5 +1,6 @@
 Farmer-BE:
 
+Done
 GET /areas
 	Req:
 	Res:
@@ -7,11 +8,12 @@ GET /areas
 			areas: string[]
 		}
 
-GET /stores?zone=area&page=page
+* ToDo
+GET /Farmer?zone=area&page=page
 	Req:
 	Res:
 		{
-			zone: string,
+		zone: string,
     		page: number,
     		total: number, //number of pages
     		stores: 
@@ -23,7 +25,9 @@ GET /stores?zone=area&page=page
     		}[]
 		}
 
-GET /store/id
+*
+Done
+GET /Farmer/id
 	Req:
 	Res:
 	{
@@ -33,6 +37,7 @@ GET /store/id
     	location: string
 	}
 
+ToDo
 GET /products?id=id+&page=page
 	Req:
 	Res:
@@ -52,7 +57,7 @@ GET /products?id=id+&page=page
     	} []
 	}
 
-GET /availability?productid='+product.id+'&seller='+product.seller
+GET /product
 	Req:
 	Res:
 	{
@@ -70,13 +75,14 @@ GET /availability?productid='+product.id+'&seller='+product.seller
 	}
 
 
-# Add an area to the Table "area"
+Done
 POST /area		
 Body: 
 	{
 		"areaName" : "[NomeArea]"
 	}
 
+Done
 POST /farmer
 body example:
 	{
@@ -89,9 +95,10 @@ body example:
 	}
 
 
+*
+Done
 POST /product (add product)
 body: {
-	id: string, 
   title: string,
   seller: string,
   image: string,
@@ -106,9 +113,9 @@ res: {
   	success: boolean
 }
 
-POST /modifyproduct
+*
+POST /modifyproduct/id
 body: {
-	id: string, 
   	title: string,
   	seller: string,
   	image: string,
@@ -123,9 +130,10 @@ res: {
   	success: boolean
 }
 
-GET /allproducts
+*
+Done
+GET /products/farmerID
 body: {
-	id: string,
   	products: {
 		id: string, 
   		title: string,
