@@ -23,7 +23,7 @@ GET /stores?zone=area&page=page
     		}[]
 		}
 
-GET /stores/id
+GET /store/id
 	Req:
 	Res:
 	{
@@ -89,3 +89,58 @@ body example:
 	}
 
 
+POST /product (add product)
+body: {
+	id: string, 
+  title: string,
+  seller: string,
+  image: string,
+  description: string,
+  price: number,
+  weight: boolean,
+  availability: boolean
+}
+res: {
+	id: string,
+  	title: string,
+  	success: boolean
+}
+
+POST /modifyproduct
+body: {
+	id: string, 
+  	title: string,
+  	seller: string,
+  	image: string,
+  	description: string,
+  	price: number,
+  	weight: boolean,
+  	availability: boolean
+}
+res: {
+	id: string,
+  	title: string,
+  	success: boolean
+}
+
+GET /allproducts
+body: {
+	id: string,
+  	products: {
+		id: string, 
+  		title: string,
+  		seller: string,
+  		image: string,
+  		description: string,
+  		price: number,
+  		weight: boolean,
+  		availability: boolean
+	} []
+}
+
+DELETE /product/id
+res: {
+	id: string,
+  	title: string,
+  	success: boolean
+}
