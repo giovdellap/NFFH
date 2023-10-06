@@ -1,4 +1,5 @@
 Farmer-BE:
+PAGINE DA 12
 
 Done
 GET /areas
@@ -43,7 +44,7 @@ GET /products?id=id+&page=page
 	Res:
 	{
 		page: number,
-    	total: number,
+    	total: number, (NUMERO DI PAGINE)
     	products: 
     	{
     		id: string, 

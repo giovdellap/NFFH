@@ -1,6 +1,6 @@
 REGISTRAZIONE:
 
-Client-FE:
+DA FE A AUTH:
 
 POST /client/signup
 
@@ -32,6 +32,32 @@ Campi del token: {
     name: string
 }
 
+DA AUTH A farmer-BE:
 
+POST /signup
+
+body: {
+    email: string,
+    password: string,
+    "username" : string,
+    "image" : string,
+    "area" : string,
+    "address" : string
+    
+}
+
+res: {
+    success: boolean,
+}
+
+POST /client/login
+
+body: {
+    email: string,
+}
+
+res: {
+    password: string
+}
 
 
