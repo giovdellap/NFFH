@@ -1,0 +1,37 @@
+REGISTRAZIONE:
+
+Client-FE:
+
+POST /client/signup
+
+body: {
+    email: string,
+    password: string,
+    name: string
+}
+
+res: {
+    success: boolean,
+    token: string(?)
+}
+
+POST /client/login
+
+body: {
+    email: string,
+    password: string
+}
+
+res: {
+    success: boolean,
+    token: string
+}
+
+Campi del token: {
+    id: string,
+    name: string
+}
+
+
+
+
