@@ -1,0 +1,12 @@
+Da BE a Auth:
+
+POST /verifyToken 
+
+body: {
+    token: string
+}
+
+res: {
+    success: boolean,
+    mail: string
+}

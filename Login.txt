@@ -24,7 +24,8 @@ body: {
 
 res: {
     success: boolean,
-    token: string
+    token: string,
+    error: string
 }
 
 Campi del token: {
@@ -57,6 +58,7 @@ body: {
 }
 
 res: {
+    success: boolean,
     password: string
 }
 
