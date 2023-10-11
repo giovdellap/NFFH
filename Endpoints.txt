@@ -9,7 +9,7 @@ GET /areas
 			areas: string[]
 		}
 
-DONE
+Todo
 GET /Farmer?zone=area&page=page
 	Req:
 	Res:
@@ -38,7 +38,8 @@ GET /Farmer/id
     	location: string
 	}
 
-ToDo
+
+Todo
 GET /products?seller=id+&page=page
 	Req:
 	Res:
