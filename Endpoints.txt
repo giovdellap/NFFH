@@ -39,7 +39,7 @@ GET /Farmer/id
 	}
 
 ToDo
-GET /products?id=id+&page=page
+GET /products?seller=id+&page=page
 	Req:
 	Res:
 	{
