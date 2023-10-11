@@ -1,1 +1,19 @@
 areas: ['Rome', 'Milan', 'Turin', 'Bologna', 'Bari', 'Firenze', 'Genova', 'Pescara', 'Padova', 'Potenza']
+
+
+Query for areaa insertion:
+
+INSERT INTO area (id,area)
+VALUES
+(1,'Rome'),
+(2, 'Milan'),
+(3,'Turin'),
+(4,'Bologna'),
+(5,'Bari'),
+(6,'Firenze'),
+(7,'Genova'),
+(8,'Pescara'),
+(9,'Padova'),
+(10,'Potenza');
+
+
