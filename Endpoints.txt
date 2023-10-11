@@ -9,7 +9,7 @@ GET /areas
 			areas: string[]
 		}
 
-* ToDo
+DONE
 GET /Farmer?zone=area&page=page
 	Req:
 	Res:
