@@ -1,0 +1,5 @@
+1) Endpoint order V
+2) Connessioni client BE
+3) Modifiche frontend nuovi Endpoint
+4) Attaccare farmer BE
+5) Carrello in locale client

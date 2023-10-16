@@ -1,0 +1,67 @@
+POST /order
+
+//Ovviamente ci sta pure l'id cliente che order si salva ma viene passato in teoria nel token 
+//quindi qualcuno(il serverino node se ne facciamo due dentro) deve fare verify e prendersi l'id cliente
+//X fare il server spring fai finta che ti viene passato pure l'id poi vediamo
+
+req: {
+    orderpart: {
+        seller: string,
+        products: {
+            product: string,
+            price: string,
+            quantity: string,
+            withdrawn: boolean
+        } []
+    } [],
+    commission: number,
+    pickup: Date, (americana?)
+    total: number,
+    accepted: boolean,
+}
+
+res: {
+    success: boolean
+    order_id: string
+}
+
+
+GET /client/myorders?page=page
+
+//stesso discorso di prima per l'id cliente
+
+res: {
+    orders: {
+        order: string,
+        orderpart: {
+            seller: string,
+            products: {
+                product: string,
+                price: string,
+                quantity: string,
+                withdrawn: boolean
+            } []
+        } [],
+        commission: number,
+        pickup: Date, (americana?)
+        total: number,
+        accepted: boolean,
+    }[]
+}
+
+GET /farmer/myorders?page=page
+
+//stesso discorso di prima per l'id farmer
+//il contenuto di questo sono le singole orderpart relative allo specifico farmer
+
+res: {
+    orders: {
+        order: string,
+        products: {
+            product: string,
+            price: string,
+            quantity: string,
+            withdrawn: boolean
+        } []
+    } [],
+}
