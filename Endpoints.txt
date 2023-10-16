@@ -116,8 +116,8 @@ res: {
   	success: boolean
 }
 
-*
-POST /modifyproduct/id
+DONE
+POST /modifyproduct?id=id
 body: {
   	title: string,
   	seller: string,
