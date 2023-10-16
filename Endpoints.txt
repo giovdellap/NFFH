@@ -2,14 +2,15 @@ Farmer-BE:
 PAGINE DA 12
 
 Done
-GET /areas
+GET /area
 	Req:
 	Res:
 		{
-			areas: string[]
-		}
+			id: string
+			areaName: string
+		} []
 
-Todo
+Done
 GET /Farmer?zone=area&page=page
 	Req:
 	Res:
@@ -39,7 +40,7 @@ GET /Farmer/id
 	}
 
 
-Todo
+Done
 GET /products?seller=id+&page=page
 	Req:
 	Res:
