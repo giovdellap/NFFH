@@ -1,3 +1,7 @@
+NEW ORDER 
+
+State: NONE
+Insomnia: NONE
 POST /order
 
 //Ovviamente ci sta pure l'id cliente che order si salva ma viene passato in teoria nel token 
@@ -25,7 +29,11 @@ res: {
     order_id: string
 }
 
+------------------------------------
+CLIENT ORDERS
 
+State: NONE
+Insomnia: NONE
 GET /client/myorders?page=page
 
 //stesso discorso di prima per l'id cliente
@@ -49,6 +57,12 @@ res: {
     }[]
 }
 
+
+-------------------------
+FARMER ORDERS
+
+State: NONE
+Insomnia: NONE
 GET /farmer/myorders?page=page
 
 //stesso discorso di prima per l'id farmer
