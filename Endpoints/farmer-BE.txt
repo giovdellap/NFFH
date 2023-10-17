@@ -1,0 +1,200 @@
+PAGINE DA 12
+
+-----------------------------------
+GET AREAS
+
+State: PROD
+Insomnia: updated
+GET /area
+
+Response:
+	{
+		id: string
+		areaName: string
+	} []
+
+
+-----------------------------------
+GET FARMERS BY AREA
+
+State: DEBUG
+Insomnia: updated
+GET /farmer/areas?area=area&page=page
+Res:
+	{
+	zone: string,
+    page: number,
+    total: number, //number of pages
+    stores: 
+    {
+    	id: string,
+    	name: string,
+    	image: string,
+    	location: string
+    }[]
+}
+
+
+-----------------------------------
+GET FARMERS BY ID
+
+State: DEBUG
+Insomnia: updated
+GET /Farmer/id
+Res:
+	{
+		id: string,
+    	name: string,
+    	image: string,
+    	location: string
+	}
+
+-----------------------------------
+GET PRODUCTS BY SELLER 
+
+State: DEBUG
+Insomnia: updated
+GET /products?seller=id&page=page
+Res:
+	{
+		page: number,
+    	total: number, (NUMERO DI PAGINE)
+    	products: 
+    	{
+    		id: string, 
+    		title: string,
+    		seller: string,
+    		image: string,
+    		description: string,
+    		price: number,
+    		weight: boolean,
+    		availability: boolean
+    	} []
+	}
+
+
+-----------------------------------
+GET PRODUCT BY ID
+
+State: PROD
+Insomnia: updated
+GET /product/ID
+Res:
+	{
+		product:
+		{
+			id: string, 
+    		title: string,
+    		seller: string,
+    		image: string,
+    		description: string,
+    		price: number,
+    		weight: boolean
+	    	availability: boolean
+		},
+	}
+
+
+-----------------------------------
+NEW AREA
+
+State: NO AUTH 
+Insomnia: updated
+POST /area		
+Body: 
+	{
+		"areaName" : "[NomeArea]"
+	}
+
+
+-----------------------------------
+NEW FARMER
+
+State: DEBUG
+Insomnia: updated
+POST /farmer
+Req:
+	{
+	"username" : "Luciano_Moggi",
+    "email" : "arbitroChiuso@nelloSpogliatoio.com",
+    "password" : "Juventus <3",
+    "image" : "cazzo",
+    "area" : "torino",
+    "address" : "via ladri dio cane"
+	}
+
+res: {
+	success: boolean
+}
+
+
+-----------------------------------
+NEW PRODUCT
+
+State: DEBUG
+Insomnia: updated
+POST /products (add product)
+req: {
+  title: string,
+  seller: string,
+  image: string,
+  description: string,
+  price: number,
+  weight: boolean,
+  availability: boolean
+}
+res: {
+	id: string,
+  	title: string,
+  	success: boolean
+}
+
+
+-----------------------------------
+MODIFY PRODUCT
+
+State: NO AUTH
+Insomnia: updated
+POST /modifyproduct?id=id
+req: {
+  	title: string,
+  	seller: string,
+  	image: string,
+  	description: string,
+  	price: number,
+  	weight: boolean,
+  	availability: boolean
+}
+res: {
+	id: string,
+  	title: string,
+  	success: boolean
+}
+
+
+-----------------------------------
+DELETE PRODUCT
+
+State: NO AUTH
+Insomnia: updated
+DELETE /products/id
+res: {
+	id: string,
+  	title: string,
+  	success: boolean
+}
+
+------------------------------
+LOGIN
+
+State: NONE
+Insomnia: updated
+POST /farmer/login
+req: {
+    email: string,
+}
+
+res: {
+    success: boolean,
+    password: string
+}
