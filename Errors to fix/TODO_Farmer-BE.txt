@@ -2,29 +2,12 @@ GET FARMERS BY AREA
 farmer/areas?area=area&page=page
 risponde 500
 
-----------------------------
-
-NEW PRODUCT
-POST /products
-dovrebbe rispondere success (vedi endpoints)
-Da fare uguale a farmer
-
--------------------------
-
-GET PRODUCTS BY SELLER
-POST /products?seller=2&page=1
-Se metti tre prodotti, i primi due con seller 1 e il terzo con seller 2, se fai la chiamata sul seller 2 da errore 500
-NON FUNZIONE SE UN FARMER HA UN SOLO PRODOTTO
-
 ---------------------------
 
-GET FARMERS BY ID
-Dovrebbe ritornare l'oggetto "light" e non quello full
-Se puoi sdoppia la funzione che quello full lo usiamo per l'admin (nel caso?)
+GET FARMERS BY ID LIGHT
+Manca l'id
 
 -------------------------------
 
-LOGIN
-Missing
 
--------------------------------------------
+

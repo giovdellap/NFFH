@@ -36,23 +36,41 @@ Res:
 
 
 -----------------------------------
-GET FARMERS BY ID
+GET FARMERS BY ID FULL
+
+State: NO AUTH
+Insomnia: updated
+GET /farmerFull/id
+Res:
+	{
+		email: string,
+		password: string
+		id: string,
+    	username: string,
+    	image: string,
+		area: string,
+		address: string
+	}
+
+-----------------------------------
+GET FARMERS BY ID LIGHT
 
 State: DEBUG
 Insomnia: updated
-GET /Farmer/id
+GET /farmerLight/id
 Res:
 	{
 		id: string,
-    	name: string,
+    	username: string,
     	image: string,
-    	location: string
+		area: string,
+		address: string
 	}
 
 -----------------------------------
 GET PRODUCTS BY SELLER 
 
-State: DEBUG
+State: PROD
 Insomnia: updated
 GET /products?seller=id&page=page
 Res:
@@ -110,7 +128,7 @@ Body:
 -----------------------------------
 NEW FARMER
 
-State: DEBUG
+State: NO AUTH
 Insomnia: updated
 POST /farmer
 Req:
@@ -131,7 +149,7 @@ res: {
 -----------------------------------
 NEW PRODUCT
 
-State: DEBUG
+State: NO AUTH
 Insomnia: updated
 POST /products (add product)
 req: {
