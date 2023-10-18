@@ -7,6 +7,7 @@ risponde 500
 NEW PRODUCT
 POST /products
 dovrebbe rispondere success (vedi endpoints)
+Da fare uguale a farmer
 
 -------------------------
 
@@ -25,3 +26,5 @@ Se puoi sdoppia la funzione che quello full lo usiamo per l'admin (nel caso?)
 
 LOGIN
 Missing
+
+-------------------------------------------
