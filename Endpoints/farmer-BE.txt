@@ -3,8 +3,9 @@ PAGINE DA 12
 -----------------------------------
 GET AREAS
 
-State: PROD
+Status: : PROD
 Insomnia: updated
+AUTH: NONE
 GET /area
 
 Response:
@@ -17,8 +18,9 @@ Response:
 -----------------------------------
 GET FARMERS BY AREA
 
-State: DEBUG
+Status: : PROD
 Insomnia: updated
+AUTH: NONE
 GET /farmer/areas?area=area&page=page
 Res:
 	{
@@ -38,8 +40,9 @@ Res:
 -----------------------------------
 GET FARMERS BY ID FULL
 
-State: NO AUTH
+Status: : PROD
 Insomnia: updated
+AUTH: ADMIN
 GET /farmerFull/id
 Res:
 	{
@@ -55,8 +58,9 @@ Res:
 -----------------------------------
 GET FARMERS BY ID LIGHT
 
-State: DEBUG
+Status: : PROD
 Insomnia: updated
+AUTH: NONE
 GET /farmerLight/id
 Res:
 	{
@@ -70,9 +74,10 @@ Res:
 -----------------------------------
 GET PRODUCTS BY SELLER 
 
-State: PROD
+Status: : PROD
 Insomnia: updated
-GET /products?seller=id&page=page
+AUTH: NONE
+GET /productfindbyseller?seller=id&page=page
 Res:
 	{
 		page: number,
@@ -94,8 +99,9 @@ Res:
 -----------------------------------
 GET PRODUCT BY ID
 
-State: PROD
+Status: : PROD
 Insomnia: updated
+AUTH: NONE
 GET /product/ID
 Res:
 	{
@@ -116,8 +122,9 @@ Res:
 -----------------------------------
 NEW AREA
 
-State: NO AUTH 
+Status: : PROD
 Insomnia: updated
+AUTH: ADMIN
 POST /area		
 Body: 
 	{
@@ -128,8 +135,9 @@ Body:
 -----------------------------------
 NEW FARMER
 
-State: NO AUTH
+Status: : PROD
 Insomnia: updated
+AUTH: INTERNAL
 POST /farmer
 Req:
 	{
@@ -149,9 +157,10 @@ res: {
 -----------------------------------
 NEW PRODUCT
 
-State: NO AUTH
+Status: : PROD
 Insomnia: updated
-POST /products (add product)
+AUTH: FARMER/ADMIN
+POST /product/add
 req: {
   title: string,
   seller: string,
@@ -171,9 +180,10 @@ res: {
 -----------------------------------
 MODIFY PRODUCT
 
-State: NO AUTH
+Status: : PROD
 Insomnia: updated
-POST /modifyproduct?id=id
+AUTH: FARMER/ADMIN
+POST /modifyproduct/id
 req: {
   	title: string,
   	seller: string,
@@ -193,9 +203,10 @@ res: {
 -----------------------------------
 DELETE PRODUCT
 
-State: NO AUTH
+Status: : PROD
 Insomnia: updated
-DELETE /products/id
+AUTH: FARMER/ADMIN
+DELETE /product/id
 res: {
 	id: string,
   	title: string,
@@ -205,8 +216,9 @@ res: {
 ------------------------------
 LOGIN
 
-State: NONE
+Status: : PROD
 Insomnia: updated
+AUTH: INTERNAL
 POST /farmer/login
 req: {
     email: string,

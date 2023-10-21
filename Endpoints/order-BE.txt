@@ -1,6 +1,6 @@
 NEW ORDER 
 
-State: NONE
+Status: : NONE
 Insomnia: NONE
 POST /order
 
@@ -32,7 +32,7 @@ res: {
 ------------------------------------
 CLIENT ORDERS
 
-State: NONE
+Status: : NONE
 Insomnia: NONE
 GET /client/myorders?page=page
 
@@ -61,7 +61,7 @@ res: {
 -------------------------
 FARMER ORDERS
 
-State: NONE
+Status: : NONE
 Insomnia: NONE
 GET /farmer/myorders?page=page
 

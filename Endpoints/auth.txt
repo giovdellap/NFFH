@@ -1,6 +1,6 @@
 CLIENT SIGNUP
 
-State: DEV
+Status: : DEV
 Insomnia: updated
 POST /client/signup
 
@@ -19,7 +19,7 @@ res: {
 --------------------------
 FARMER SIGNUP 
 
-State:
+Status: :
 Insomnia: updated
 POST /farmer/signup
 
@@ -37,7 +37,7 @@ res: {
 --------------------------
 CLIENT LOGIN 
 
-State: DEV
+Status: : DEV
 Insomnia: updated
 
 POST /client/login
@@ -57,7 +57,7 @@ res: {
 --------------------------
 FARMER LOGIN 
 
-State: DEV
+Status: : DEV
 Insomnia: updated
 
 POST /farmer/login
@@ -76,7 +76,7 @@ res: {
 -------------------------
 VERIFY TOKEN
 
-State: DEV
+Status: : DEV
 Insomnia: updated
 
 POST /verifyToken 
