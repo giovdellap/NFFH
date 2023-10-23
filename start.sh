@@ -1,10 +1,12 @@
 # Clone and Start Repos
+mkdir NFFH
+cd NFFH
 
 ### Clone Gatway
 git clone https://github.com/giovdellap/NFFH-gateway.git
 cd NFFH-gateway 
 docker compose up &
-cd
+cd ..
 
 ## Clone Auth
 git clone https://github.com/alessandropisent/NFFH-Auth.git
