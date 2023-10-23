@@ -141,12 +141,12 @@ AUTH: INTERNAL
 POST /farmer
 Req:
 	{
-	"username" : "Luciano_Moggi",
-    "email" : "arbitroChiuso@nelloSpogliatoio.com",
-    "password" : "Juventus <3",
-    "image" : "cazzo",
-    "area" : "torino",
-    "address" : "via ladri dio cane"
+	"username" : string,
+    "email" : string,
+    "password" : string,
+    "image" : string,
+    "area" : string,
+    "address" : string
 	}
 
 res: {
