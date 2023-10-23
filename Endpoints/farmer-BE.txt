@@ -77,7 +77,7 @@ GET PRODUCTS BY SELLER
 Status: : PROD
 Insomnia: updated
 AUTH: NONE
-GET /productfindbyseller?seller=id&page=page
+GET /product/findbyseller?seller=id&page=page
 Res:
 	{
 		page: number,
@@ -150,7 +150,8 @@ Req:
 	}
 
 res: {
-	success: boolean
+	success: boolean,
+	id: string
 }
 
 
@@ -183,7 +184,7 @@ MODIFY PRODUCT
 Status: : PROD
 Insomnia: updated
 AUTH: FARMER/ADMIN
-POST /modifyproduct/id
+POST /product/modify/id
 req: {
   	title: string,
   	seller: string,
@@ -226,5 +227,7 @@ req: {
 
 res: {
     success: boolean,
-    password: string
+    password: string,
+	id: string,
+	username: string
 }

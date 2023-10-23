@@ -1,6 +1,6 @@
 CLIENT SIGNUP
 
-Status: : DEV
+Status: : PROD
 Insomnia: updated
 POST /client/signup
 
@@ -19,27 +19,31 @@ res: {
 --------------------------
 FARMER SIGNUP 
 
-Status: :
+Status: PROD
 Insomnia: updated
 POST /farmer/signup
 
 req: {
     email: string,
     password: string,
-    name: string
+    username: string,
+    image: string,
+    area: string,
+    address: string
 }
 
 res: {
     success: boolean,
-    token: string(?)
+    token: string,
+    id: string
 }
 
 --------------------------
 CLIENT LOGIN 
 
-Status: : DEV
+FE: DEV
+Status: : PROD
 Insomnia: updated
-
 POST /client/login
 
 req: {
@@ -50,7 +54,9 @@ req: {
 res: {
     success: boolean,
     token: string,
-    error: string
+    error: string,
+    id: string,
+    username: string
 }
 
 
@@ -59,7 +65,7 @@ FARMER LOGIN
 
 Status: : DEV
 Insomnia: updated
-
+FE: DEV
 POST /farmer/login
 
 req: {
@@ -70,7 +76,9 @@ req: {
 res: {
     success: boolean,
     token: string,
-    error: string
+    error: string,
+    id: string,
+    username: string
 }
 
 -------------------------

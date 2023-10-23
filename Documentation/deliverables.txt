@@ -1,0 +1,12 @@
+# File to be deliverd
+- User Stories
+- Function point exel
+	- COCOMOII Calcolo
+	- (optional) excel template 
+- Scrum spreadsheet
+	- Gaant + Pruduct backlog
+	- Sprint progress report
+- Architetturale : (Chiamate)
+	- UML
+	- Tabelle markdown con endpoint servizi
+	- Leggenda Endpoints : Porte e robe visibili al esterno
