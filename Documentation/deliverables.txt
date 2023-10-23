@@ -10,3 +10,12 @@
 	- UML
 	- Tabelle markdown con endpoint servizi
 	- Leggenda Endpoints : Porte e robe visibili al esterno
+- Booklet
+	- Scaletta
+	- introduzione
+	- FP
+	- Scrum
+	- Architetturale
+	- (con screen di tutto)
+
+https://github.com/EFProject/ProjectL
