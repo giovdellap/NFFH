@@ -12,13 +12,13 @@ cd ..
 git clone https://github.com/alessandropisent/NFFH-Auth.git
 cd NFFH-Auth
 docker compose up &
-cd
+cd ..
 
 ## Clone Image Server
 git clone https://github.com/alessandropisent/NFFH-ImageServer.git
 cd NFFH-ImageServer
 docker compose up &
-cd
+cd ..
 
 ## Clone Farmer BE
 git clone https://github.com/IvanNic06/NFFH-Farmer-BE.git
