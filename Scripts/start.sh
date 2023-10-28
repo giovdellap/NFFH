@@ -46,3 +46,13 @@ cd ..
 
 ## Clone Farmer FE
 #git clone https://github.com/giovdellap/NFFH-client-FE.git
+#cd NFFH-client-FE
+#docker compose up &
+#cd ..
+
+
+## Clone Farmer-FE
+#git clone https://github.com/giovdellap/NFFH-farmer-FE.git
+#cd NFFH-farmer-FE
+#docker compose up &
+#cd ..

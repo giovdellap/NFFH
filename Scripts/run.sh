@@ -11,22 +11,24 @@ mvn install
 docker compose up &
 cd ..
 
-cd NFFH-client-FE
-docker compose up &
-cd ..
-
 cd NFFH-Farmer-BE
 mvn install
 docker compose up &
 cd ..
 
-
 cd NFFH-ImageServer
 docker compose up &
 cd ..
 
-
 cd NFFH-Order-BE
-#mvn install
+mvn install
 docker compose up &
 cd ..
+
+cd NFFH-client-FE
+docker compose up &
+cd ..
+
+#cd NFFH-farmer-FE
+#docker compose up &
+#cd ..

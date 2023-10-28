@@ -13,11 +13,6 @@ git checkout -- .
 git pull
 cd ..
 
-cd NFFH-client-FE
-git checkout -- .
-git pull
-cd ..
-
 cd NFFH-Farmer-BE
 git checkout -- .
 git pull
@@ -35,6 +30,17 @@ cd ..
 
 
 cd NFFH-Order-BE
+git checkout -- .
+git pull
+cd ..
+
+
+cd NFFH-farmer-FE
+git checkout -- .
+git pull
+cd ..
+
+cd NFFH-client-FE
 git checkout -- .
 git pull
 cd ..
