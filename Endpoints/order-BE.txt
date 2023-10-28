@@ -9,19 +9,21 @@ POST /order
 //X fare il server spring fai finta che ti viene passato pure l'id poi vediamo
 
 req: {
-    orderpart: {
+    orderPart: {
         seller: string,
         products: {
             product: string,
             price: string,
             quantity: string,
             withdrawn: boolean
-        } []
+        } [] (string)
     } [],
     commission: number,
     pickup: Date, (americana?)
     total: number,
-    accepted: boolean,
+    accepted: string,
+    client: int,
+
 }
 
 res: {
@@ -34,7 +36,7 @@ CLIENT ORDERS
 
 Status: : NONE
 Insomnia: NONE
-GET /client/myorders?page=page
+GET /client/myorders
 
 //stesso discorso di prima per l'id cliente
 
