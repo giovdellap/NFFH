@@ -12,7 +12,7 @@ Documentation on Endpoints and Infrastructure is available on NFFH repository ( 
 
 "start" script creates a new folder inside the current one called NFFH containing all the repos source code
 
-**ALWAYS** cd in the folder: Scripts
+At first : **ALWAYS** cd in the folder: Scripts
 
 - sh start.sh
   - Creates new folder "NFFH"
@@ -29,6 +29,8 @@ After that cd into Scripts/NFFH/
   - docker compose up on all containers
 - sh reboot.sh
   - Executes remove.sh, update.sh, run.sh in sequence
+
+In some occasions, after start.sh, you need to manually restart the following services: client-be, farmer-be, order-be
 
 
 ### Repositories
