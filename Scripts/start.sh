@@ -1,5 +1,6 @@
 # Clone and Start Repos
 mkdir NFFH
+cp -r *.* ./NFFH
 cd NFFH
 
 ### Clone Gatway
