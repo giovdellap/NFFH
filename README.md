@@ -10,17 +10,22 @@
 
 "start" script creates a new folder inside the current one called NFFH containing all the repos source code
 
-- sh /Scripts/start.sh
+**ALWAYS** cd in the folder: Scripts
+
+- sh start.sh
   - Creates new folder "NFFH"
   - Clones the repositories and docker compose up
-- sh /Scripts/remove.sh
+
+After that cd into Scripts/NFFH/
+
+- sh remove.sh
   - Deletes all running containers
   - Deletes all images
-- sh /Scripts/update.sh
+- sh update.sh
   - Pulls from all git repositories
-- sh /Scripts/run.sh
+- sh run.sh
   - docker compose up on all containers
-- sh /Scripts/reboot.sh
+- sh reboot.sh
   - Executes remove.sh, update.sh, run.sh in sequence
 
 
@@ -44,4 +49,6 @@
 - Farmer Frontend: http://localhost:4202
 - Admin Frontend: http://localhost:4203
 - Gateway: http://localhost:8080
+
+
 
