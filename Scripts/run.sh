@@ -29,6 +29,10 @@ cd NFFH-client-FE
 docker compose up &
 cd ..
 
-#cd NFFH-farmer-FE
-#docker compose up &
-#cd ..
+cd NFFH-farmer-FE
+docker compose up &
+cd ..
+
+cd NFFH-admin-FE
+docker compose up &
+cd ..

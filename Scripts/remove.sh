@@ -27,6 +27,11 @@ cd NFFH-farmer-FE
 docker compose rm -sf && docker image rm nffh-farmer-fe-farmer-fe:latest
 cd ..
 
-#cd NFFH-Order-BE
-#git pull
-#cd ..
+cd NFFH-Order-BE
+docker compose rm -sf && docker image rm nffh-order-be-order-be:latest
+cd ..
+
+
+cd NFFH-admin-FE
+docker compose rm -sf && docker image rm nffh-admin-fe-admin-fe:latest
+cd .. 

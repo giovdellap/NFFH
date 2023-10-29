@@ -45,14 +45,20 @@ docker compose up &
 cd ..
 
 ## Clone Farmer FE
-#git clone https://github.com/giovdellap/NFFH-client-FE.git
-#cd NFFH-client-FE
-#docker compose up &
-#cd ..
+git clone https://github.com/giovdellap/NFFH-client-FE.git
+cd NFFH-client-FE
+docker compose up &
+cd ..
 
 
 ## Clone Farmer-FE
-#git clone https://github.com/giovdellap/NFFH-farmer-FE.git
-#cd NFFH-farmer-FE
-#docker compose up &
-#cd ..
+git clone https://github.com/giovdellap/NFFH-farmer-FE.git
+cd NFFH-farmer-FE
+docker compose up &
+cd ..
+
+## Clone Admin-FE
+git clone https://github.com/giovdellap/NFFH-admin-FE.git
+cd NFFH-admin-FE
+docker compose up &
+cd ..
