@@ -10,17 +10,13 @@ POST /order
 
 req: {
     orderpart: {
-        seller: string,
-        products: {
-            product: string,
-            price: string,
-            quantity: string,
-            withdrawn: boolean
-        } []
+        seller: String,
+        productList: String
     } [],
-    commission: number,
-    pickup: Date, (americana?)
-    total: number,
+    client: number (id)
+    commission: float,
+    pickup: String,
+    total: float,
     accepted: boolean,
 }
 
@@ -34,26 +30,19 @@ CLIENT ORDERS
 
 Status: : NONE
 Insomnia: NONE
-GET /client/myorders?page=page
+GET order/client/myorder?id=id
 
 //stesso discorso di prima per l'id cliente
 
 res: {
-    orders: {
-        order: string,
-        orderpart: {
-            seller: string,
-            products: {
-                product: string,
-                price: string,
-                quantity: string,
-                withdrawn: boolean
-            } []
-        } [],
-        commission: number,
-        pickup: Date, (americana?)
-        total: number,
-        accepted: boolean,
+    orderList : {
+        orderID : number (id),
+        orderPartList : {
+            id : number (id),
+            idOrder : number (id),
+            seller : number (id),
+            productList : String
+        }[]
     }[]
 }
 
@@ -63,19 +52,17 @@ FARMER ORDERS
 
 Status: : NONE
 Insomnia: NONE
-GET /farmer/myorders?page=page
+GET /farmer/myorders?id=id
 
 //stesso discorso di prima per l'id farmer
 //il contenuto di questo sono le singole orderpart relative allo specifico farmer
 
-res: {
-    orders: {
-        order: string,
-        products: {
-            product: string,
-            price: string,
-            quantity: string,
-            withdrawn: boolean
-        } []
-    } [],
-}
+res: 
+    
+        {
+        id : number,
+        idOrder : number,
+        seller : number (id)
+        productList : String
+        }
+    []
