@@ -13,6 +13,10 @@
 | Order-BE | order-be | openjdk:17 | 9704 (network) |
 | Order-BE | mysql-order | mysql:8.0.34 | 3306 (internal) |
 | Image Server | image-server | python:3.11.6 | 9705 (network) |
+| Client-FE | client-fe | node:18 | 4201 (localhost) |
+| Farmer-FE | farmer-fe | node:18 | 4202 (localhost) |
+| Admin-FE | admin-fe | node:18 | 4203 (localhost) |
+
 
 
 #### EXPOSED PORTS LEGEND

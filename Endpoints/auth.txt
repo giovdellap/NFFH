@@ -7,7 +7,7 @@ POST /client/signup
 req: {
     email: string,
     password: string,
-    name: string
+    username: string
 }
 
 res: {

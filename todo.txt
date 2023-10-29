@@ -1,6 +1,11 @@
-1) Endpoint order V
-2) Connessioni client BE
-3) Modifiche frontend nuovi Endpoint
-4) Attaccare farmer BE V
-5) Carrello in locale client
+X Finire user stories
+- Finire Gantt
+X Function point exel
+X COCOMOII Calcolo
+X UML(?)
+- Tabelle markdown con endpoint servizi
+- attacare client-FE a client BE
+- fare admin
+- attaccare client fe a order
+- testing
 

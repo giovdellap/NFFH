@@ -10,6 +10,7 @@
 	- UML
 	- Tabelle markdown con endpoint servizi
 	- Leggenda Endpoints : Porte e robe visibili al esterno
+	X ER
 - Booklet
 	- Scaletta
 	- introduzione
