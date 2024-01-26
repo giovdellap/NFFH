@@ -6,7 +6,7 @@
 
 #### Ivan Nicolò - 1857050 - @IvanNic06
 
-Documentation on Endpoints and Infrastructure is available on NFFH repository ( - NFFH-gateway:https://github.com/giovdellap/NFFH )
+Documentation on Endpoints and Infrastructure is available on NFFH repository ( https://github.com/giovdellap/NFFH )
 
 ### To start:
 
